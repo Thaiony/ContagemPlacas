@@ -3,26 +3,26 @@ body {
     background-image: url('background.jpg');
     background-size: cover;
     background-attachment: fixed;
-    color: #333;
+    color: #070707;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(250, 249, 249, 0.9);
     margin-top: 20px;
     border-radius: 8px;
     overflow: hidden;
 }
 
 th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #1c1c1d;
     padding: 12px;
     text-align: left;
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: #a19494;
     color: #333;
 }
 
@@ -33,7 +33,7 @@ th {
 thead th {
     position: sticky;
     top: 0;
-    background-color: #f2f2f2;
+    background-color: #d1cfcf;
 }
 
 .contador {
@@ -44,15 +44,15 @@ thead th {
 .contador button {
     width: 30px;
     height: 30px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #0f0f0f;
+    color: rgb(255, 254, 254);
     border: none;
     cursor: pointer;
     border-radius: 4px;
 }
 
 .contador button:hover {
-    background-color: #45a049;
+    background-color: #3e3f3e;
 }
 
 .contador input {
@@ -66,7 +66,7 @@ thead th {
 button.exportar {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #000000;
     color: white;
     border: none;
     cursor: pointer;
@@ -74,5 +74,5 @@ button.exportar {
 }
 
 button.exportar:hover {
-    background-color: #45a049;
+    background-color: #383838;
 }
