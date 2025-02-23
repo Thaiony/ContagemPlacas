@@ -42,3 +42,38 @@ function exportarTxt() {
     link.download = 'inventario.txt';
     link.click();
 }
+
+function exportarExcel() {
+    // Criar array com os dados
+    const dados = [];
+    
+    // Adicionar cabeçalho
+    dados.push(['Código', 'Descrição', 'CM', 'Estoque S', 'Estoque T', 'Valor Estoque S']);
+    
+    // Adicionar dados das linhas
+    document.querySelectorAll('tbody tr').forEach(tr => {
+        const linha = [
+            tr.children[0].innerText,                          // Código
+            tr.children[1].innerText,                          // Descrição
+            tr.children[2].innerText,                          // CM
+            tr.children[3].querySelector('input').value,       // Estoque S
+            tr.children[4].querySelector('input').value,       // Estoque T
+            tr.children[5].innerText                           // Valor Estoque S
+        ];
+        dados.push(linha);
+    });
+
+    // Adicionar linha do total
+    const totalValor = document.getElementById('total_valor_estoqueS').innerText;
+    dados.push(['', '', '', '', 'Total:', totalValor]);
+
+    // Criar planilha
+    const ws = XLSX.utils.aoa_to_sheet(dados);
+
+    // Criar workbook
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, "Inventário");
+
+    // Gerar arquivo Excel
+    XLSX.writeFile(wb, "inventario_placas.xlsx");
+}
