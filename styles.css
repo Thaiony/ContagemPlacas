@@ -4,15 +4,18 @@ body {
     background-size: cover;
     background-attachment: fixed;
     color: #070707;
+    max-height: 100vh;
+    overflow-y: auto;
 }
 
 table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0;
     background-color: rgba(250, 249, 249, 0.9);
     margin-top: 20px;
     border-radius: 8px;
-    overflow: hidden;
+    overflow: visible;
 }
 
 th, td {
@@ -33,7 +36,18 @@ th {
 thead th {
     position: sticky;
     top: 0;
-    background-color: #d1cfcf;
+    background-color: #a19494;
+    border-bottom: 2px solid #1c1c1d;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+thead {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white; /* Para garantir que o fundo seja visível */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Opcional: adiciona uma sombra sutil */
+    transition: box-shadow 0.3s ease;
 }
 
 .contador {
@@ -41,7 +55,7 @@ thead th {
     align-items: center;
 }
 
-.contador button {
+contado button {
     width: 30px;
     height: 30px;
     background-color: #0f0f0f;
