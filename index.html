@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Inventário de Placas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Contagem Placas Mãe</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th class="hidden">Descrição</th>
+                <th class="hidden">CM</th>
+                <th>Estoque S</th>
+                <th>Estoque T</th>
+                <th>Valor Estoque S</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>33675</td>
+                <td class="hidden">PLACA S1151 H110M-S2V DDR4 GIGABYTE</td>
+                <td class="hidden">231,71</td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque S" onclick="alterarEstoque('estoqueS_33675', -1, 231.71)">-</button>
+                        <input type="text" id="estoqueS_33675" value="0" readonly aria-label="Estoque S">
+                        <button aria-label="Aumentar estoque S" onclick="alterarEstoque('estoqueS_33675', 1, 231.71)">+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque T" onclick="alterarEstoque('estoqueT_33675', -1, 231.71)">-</button>
+                        <input type="text" id="estoqueT_33675" value="0" readonly aria-label="Estoque T">
+                        <button aria-label="Aumentar estoque T" onclick="alterarEstoque('estoqueT_33675', 1, 231.71)">+</button>
+                    </div>
+                </td>
+                <td id="valor_33675">R$ 0,00</td>
+            </tr>
+            <tr>
+                <td>34178</td>
+                <td class="hidden">PLACA S1155 H61 DDR3 TCN</td>
+                <td class="hidden">137,44</td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque S" onclick="alterarEstoque('estoqueS_34178', -1, 137.44)">-</button>
+                        <input type="text" id="estoqueS_34178" value="0" readonly aria-label="Estoque S">
+                        <button aria-label="Aumentar estoque S" onclick="alterarEstoque('estoqueS_34178', 1, 137.44)">+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque T" onclick="alterarEstoque('estoqueT_34178', -1, 137.44)">-</button>
+                        <input type="text" id="estoqueT_34178" value="0" readonly aria-label="Estoque T">
+                        <button aria-label="Aumentar estoque T" onclick="alterarEstoque('estoqueT_34178', 1, 137.44)">+</button>
+                    </div>
+                </td>
+                <td id="valor_34178">R$ 0,00</td>
+            </tr>
+            <tr>
+                <td>36020</td>
+                <td class="hidden">PLACA S1155 H61 DDR3 TCN</td>
+                <td class="hidden">151,15</td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque S" onclick="alterarEstoque('estoqueS_36020', -1, 151.15)">-</button>
+                        <input type="text" id="estoqueS_36020" value="0" readonly aria-label="Estoque S">
+                        <button aria-label="Aumentar estoque S" onclick="alterarEstoque('estoqueS_36020', 1, 151.15)">+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque T" onclick="alterarEstoque('estoqueT_36020', -1, 151.15)">-</button>
+                        <input type="text" id="estoqueT_36020" value="0" readonly aria-label="Estoque T">
+                        <button aria-label="Aumentar estoque T" onclick="alterarEstoque('estoqueT_36020', 1, 151.15)">+</button>
+                    </div>
+                </td>
+                <td id="valor_36020">R$ 0,00</td>
+            </tr>
+            <tr>
+                <td>36021</td>
+                <td class="hidden">PLACA S1150 H81 DDR3 TCN</td>
+                <td class="hidden">156,85</td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque S" onclick="alterarEstoque('estoqueS_36021', -1, 156.85)">-</button>
+                        <input type="text" id="estoqueS_36021" value="0" readonly aria-label="Estoque S">
+                        <button aria-label="Aumentar estoque S" onclick="alterarEstoque('estoqueS_36021', 1, 156.85)">+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque T" onclick="alterarEstoque('estoqueT_36021', -1, 156.85)">-</button>
+                        <input type="text" id="estoqueT_36021" value="0" readonly aria-label="Estoque T">
+                        <button aria-label="Aumentar estoque T" onclick="alterarEstoque('estoqueT_36021', 1, 156.85)">+</button>
+                    </div>
+                </td>
+                <td id="valor_36021">R$ 0,00</td>
+            </tr>
+            <tr>
+                <td>39982</td>
+                <td class="hidden">PLACA L775 G41 DDR3 TCN</td>
+                <td class="hidden">105,97</td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque S" onclick="alterarEstoque('estoqueS_39982', -1, 105.97)">-</button>
+                        <input type="text" id="estoqueS_39982" value="0" readonly aria-label="Estoque S">
+                        <button aria-label="Aumentar estoque S" onclick="alterarEstoque('estoqueS_39982', 1, 105.97)">+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque T" onclick="alterarEstoque('estoqueT_39982', -1, 105.97)">-</button>
+                        <input type="text" id="estoqueT_39982" value="0" readonly aria-label="Estoque T">
+                        <button aria-label="Aumentar estoque T" onclick="alterarEstoque('estoqueT_39982', 1, 105.97)">+</button>
+                    </div>
+                </td>
+                <td id="valor_39982">R$ 0,00</td>
+            </tr>
+            <tr>
+                <td>41087</td>
+                <td class="hidden">PLACA S1155 H61 H2 DDR3</td>
+                <td class="hidden">240,35</td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque S" onclick="alterarEstoque('estoqueS_41087', -1, 240.35)">-</button>
+                        <input type="text" id="estoqueS_41087" value="0" readonly aria-label="Estoque S">
+                        <button aria-label="Aumentar estoque S" onclick="alterarEstoque('estoqueS_41087', 1, 240.35)">+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque T" onclick="alterarEstoque('estoqueT_41087', -1, 240.35)">-</button>
+                        <input type="text" id="estoqueT_41087" value="0" readonly aria-label="Estoque T">
+                        <button aria-label="Aumentar estoque T" onclick="alterarEstoque('estoqueT_41087', 1, 240.35)">+</button>
+                    </div>
+                </td>
+                <td id="valor_41087">R$ 0,00</td>
+            </tr>
+            <tr>
+                <td>43764</td>
+                <td class="hidden">PLACA S1155 H61 DDR3 GT</td>
+                <td class="hidden">119,22</td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque S" onclick="alterarEstoque('estoqueS_43764', -1, 119.22)">-</button>
+                        <input type="text" id="estoqueS_43764" value="0" readonly aria-label="Estoque S">
+                        <button aria-label="Aumentar estoque S" onclick="alterarEstoque('estoqueS_43764', 1, 119.22)">+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque T" onclick="alterarEstoque('estoqueT_43764', -1, 119.22)">-</button>
+                        <input type="text" id="estoqueT_43764" value="0" readonly aria-label="Estoque T">
+                        <button aria-label="Aumentar estoque T" onclick="alterarEstoque('estoqueT_43764', 1, 119.22)">+</button>
+                    </div>
+                </td>
+                <td id="valor_43764">R$ 0,00</td>
+            </tr>
+            <tr>
+                <td>43765</td>
+                <td class="hidden">PLACA S1150 H81 DDR3 GT</td>
+                <td class="hidden">158,51</td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque S" onclick="alterarEstoque('estoqueS_43765', -1, 158.51)">-</button>
+                        <input type="text" id="estoqueS_43765" value="0" readonly aria-label="Estoque S">
+                        <button aria-label="Aumentar estoque S" onclick="alterarEstoque('estoqueS_43765', 1, 158.51)">+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque T" onclick="alterarEstoque('estoqueT_43765', -1, 158.51)">-</button>
+                        <input type="text" id="estoqueT_43765" value="0" readonly aria-label="Estoque T">
+                        <button aria-label="Aumentar estoque T" onclick="alterarEstoque('estoqueT_43765', 1, 158.51)">+</button>
+                    </div>
+                </td>
+                <td id="valor_43765">R$ 0,00</td>
+            </tr>
+            <tr>
+                <td>43766</td>
+                <td class="hidden">PLACA L775 G41 DDR3 GT</td>
+                <td class="hidden">102,27</td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque S" onclick="alterarEstoque('estoqueS_43766', -1, 102.27)">-</button>
+                        <input type="text" id="estoqueS_43766" value="0" readonly aria-label="Estoque S">
+                        <button aria-label="Aumentar estoque S" onclick="alterarEstoque('estoqueS_43766', 1, 102.27)">+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque T" onclick="alterarEstoque('estoqueT_43766', -1, 102.27)">-</button>
+                        <input type="text" id="estoqueT_43766" value="0" readonly aria-label="Estoque T">
+                        <button aria-label="Aumentar estoque T" onclick="alterarEstoque('estoqueT_43766', 1, 102.27)">+</button>
+                    </div>
+                </td>
+                <td id="valor_43766">R$ 0,00</td>
+            </tr>
+            <tr>
+                <td>43767</td>
+                <td class="hidden">PLACA S1151 H110 DDR4 GT</td>
+                <td class="hidden">206,37</td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque S" onclick="alterarEstoque('estoqueS_43767', -1, 206.37)">-</button>
+                        <input type="text" id="estoqueS_43767" value="0" readonly aria-label="Estoque S">
+                        <button aria-label="Aumentar estoque S" onclick="alterarEstoque('estoqueS_43767', 1, 206.37)">+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque T" onclick="alterarEstoque('estoqueT_43767', -1, 206.37)">-</button>
+                        <input type="text" id="estoqueT_43767" value="0" readonly aria-label="Estoque T">
+                        <button aria-label="Aumentar estoque T" onclick="alterarEstoque('estoqueT_43767', 1, 206.37)">+</button>
+                    </div>
+                </td>
+                <td id="valor_43767">R$ 0,00</td>
+            </tr>
+            <tr>
+                <td>43872</td>
+                <td class="hidden">PLACA S1155 H61D-20 DDR3</td>
+                <td class="hidden">230,48</td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque S" onclick="alterarEstoque('estoqueS_43872', -1, 230.48)">-</button>
+                        <input type="text" id="estoqueS_43872" value="0" readonly aria-label="Estoque S">
+                        <button aria-label="Aumentar estoque S" onclick="alterarEstoque('estoqueS_43872', 1, 230.48)">+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque T" onclick="alterarEstoque('estoqueT_43872', -1, 230.48)">-</button>
+                        <input type="text" id="estoqueT_43872" value="0" readonly aria-label="Estoque T">
+                        <button aria-label="Aumentar estoque T" onclick="alterarEstoque('estoqueT_43872', 1, 230.48)">+</button>
+                    </div>
+                </td>
+                <td id="valor_43872">R$ 0,00</td>
+            </tr>
+            <tr>
+                <td>46334</td>
+                <td class="hidden">PLACA S1155 Z77 YZ77F DDR3</td>
+                <td class="hidden">235,94</td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque S" onclick="alterarEstoque('estoqueS_46334', -1, 235.94)">-</button>
+                        <input type="text" id="estoqueS_46334" value="0" readonly aria-label="Estoque S">
+                        <button aria-label="Aumentar estoque S" onclick="alterarEstoque('estoqueS_46334', 1, 235.94)">+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque T" onclick="alterarEstoque('estoqueT_46334', -1, 235.94)">-</button>
+                        <input type="text" id="estoqueT_46334" value="0" readonly aria-label="Estoque T">
+                        <button aria-label="Aumentar estoque T" onclick="alterarEstoque('estoqueT_46334', 1, 235.94)">+</button>
+                    </div>
+                </td>
+                <td id="valor_46334">R$ 0,00</td>
+            </tr>
+            <tr>
+                <td>48564</td>
+                <td class="hidden">PLACA S1150 21 VH81 DDR3</td>
+                <td class="hidden">231,71</td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque S" onclick="alterarEstoque('estoqueS_48564', -1, 231.71)">-</button>
+                        <input type="text" id="estoqueS_48564" value="0" readonly aria-label="Estoque S">
+                        <button aria-label="Aumentar estoque S" onclick="alterarEstoque('estoqueS_48564', 1, 231.71)">+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque T" onclick="alterarEstoque('estoqueT_48564', -1, 231.71)">-</button>
+                        <input type="text" id="estoqueT_48564" value="0" readonly aria-label="Estoque T">
+                        <button aria-label="Aumentar estoque T" onclick="alterarEstoque('estoqueT_48564', 1, 231.71)">+</button>
+                    </div>
+                </td>
+                <td id="valor_48564">R$ 0,00</td>
+            </tr>
+            <tr>
+                <td>48695</td>
+                <td class="hidden">PLACA S1155 H61 DDR3 CY</td>
+                <td class="hidden">245,43</td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque S" onclick="alterarEstoque('estoqueS_48695', -1, 245.43)">-</button>
+                        <input type="text" id="estoqueS_48695" value="0" readonly aria-label="Estoque S">
+                        <button aria-label="Aumentar estoque S" onclick="alterarEstoque('estoqueS_48695', 1, 245.43)">+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque T" onclick="alterarEstoque('estoqueT_48695', -1, 245.43)">-</button>
+                        <input type="text" id="estoqueT_48695" value="0" readonly aria-label="Estoque T">
+                        <button aria-label="Aumentar estoque T" onclick="alterarEstoque('estoqueT_48695', 1, 245.43)">+</button>
+                    </div>
+                </td>
+                <td id="valor_48695">R$ 0,00</td>
+            </tr>
+            <tr>
+                <td>51275</td>
+                <td class="hidden">PLACA S1151 H310C DDR4 GT</td>
+                <td class="hidden">183,44</td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque S" onclick="alterarEstoque('estoqueS_51275', -1, 183.44)">-</button>
+                        <input type="text" id="estoqueS_51275" value="0" readonly aria-label="Estoque S">
+                        <button aria-label="Aumentar estoque S" onclick="alterarEstoque('estoqueS_51275', 1, 183.44)">+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque T" onclick="alterarEstoque('estoqueT_51275', -1, 183.44)">-</button>
+                        <input type="text" id="estoqueT_51275" value="0" readonly aria-label="Estoque T">
+                        <button aria-label="Aumentar estoque T" onclick="alterarEstoque('estoqueT_51275', 1, 183.44)">+</button>
+                    </div>
+                </td>
+                <td id="valor_51275">R$ 0,00</td>
+            </tr>
+            <tr>
+                <td>51278</td>
+                <td class="hidden">PLACA S1200 H510 DDR4 GT</td>
+                <td class="hidden">264,08</td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque S" onclick="alterarEstoque('estoqueS_51278', -1, 264.08)">-</button>
+                        <input type="text" id="estoqueS_51278" value="0" readonly aria-label="Estoque S">
+                        <button aria-label="Aumentar estoque S" onclick="alterarEstoque('estoqueS_51278', 1, 264.08)">+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque T" onclick="alterarEstoque('estoqueT_51278', -1, 264.08)">-</button>
+                        <input type="text" id="estoqueT_51278" value="0" readonly aria-label="Estoque T">
+                        <button aria-label="Aumentar estoque T" onclick="alterarEstoque('estoqueT_51278', 1, 264.08)">+</button>
+                    </div>
+                </td>
+                <td id="valor_51278">R$ 0,00</td>
+            </tr>
+            <tr>
+                <td>51938</td>
+                <td class="hidden">PLACA S1155 H61 DDR3</td>
+                <td class="hidden">201</td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque S" onclick="alterarEstoque('estoqueS_51938', -1, 201)">-</button>
+                        <input type="text" id="estoqueS_51938" value="0" readonly aria-label="Estoque S">
+                        <button aria-label="Aumentar estoque S" onclick="alterarEstoque('estoqueS_51938', 1, 201)">+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque T" onclick="alterarEstoque('estoqueT_51938', -1, 201)">-</button>
+                        <input type="text" id="estoqueT_51938" value="0" readonly aria-label="Estoque T">
+                        <button aria-label="Aumentar estoque T" onclick="alterarEstoque('estoqueT_51938', 1, 201)">+</button>
+                    </div>
+                </td>
+                <td id="valor_51938">R$ 0,00</td>
+            </tr>
+            <tr>
+                <td>53752</td>
+                <td class="hidden">PLACA S1155 H61 DDR3 GE M2 GT</td>
+                <td class="hidden">71,51</td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque S" onclick="alterarEstoque('estoqueS_53752', -1, 71.51)">-</button>
+                        <input type="text" id="estoqueS_53752" value="0" readonly aria-label="Estoque S">
+                        <button aria-label="Aumentar estoque S" onclick="alterarEstoque('estoqueS_53752', 1, 71.51)">+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque T" onclick="alterarEstoque('estoqueT_53752', -1, 71.51)">-</button>
+                        <input type="text" id="estoqueT_53752" value="0" readonly aria-label="Estoque T">
+                        <button aria-label="Aumentar estoque T" onclick="alterarEstoque('estoqueT_53752', 1, 71.51)">+</button>
+                    </div>
+                </td>
+                <td id="valor_53752">R$ 0,00</td>
+            </tr>
+            <tr>
+                <td>55081</td>
+                <td class="hidden">PLACA S1150 H81 DDR3 GT</td>
+                <td class="hidden">116,32</td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque S" onclick="alterarEstoque('estoqueS_55081', -1, 116.32)">-</button>
+                        <input type="text" id="estoqueS_55081" value="0" readonly aria-label="Estoque S">
+                        <button aria-label="Aumentar estoque S" onclick="alterarEstoque('estoqueS_55081', 1, 116.32)">+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque T" onclick="alterarEstoque('estoqueT_55081', -1, 116.32)">-</button>
+                        <input type="text" id="estoqueT_55081" value="0" readonly aria-label="Estoque T">
+                        <button aria-label="Aumentar estoque T" onclick="alterarEstoque('estoqueT_55081', 1, 116.32)">+</button>
+                    </div>
+                </td>
+                <td id="valor_55081">R$ 0,00</td>
+            </tr>
+            <tr>
+                <td>55306</td>
+                <td class="hidden">PLACA AM4 A320 DDR4 GT</td>
+                <td class="hidden">199,1</td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque S" onclick="alterarEstoque('estoqueS_55306', -1, 199.1)">-</button>
+                        <input type="text" id="estoqueS_55306" value="0" readonly aria-label="Estoque S">
+                        <button aria-label="Aumentar estoque S" onclick="alterarEstoque('estoqueS_55306', 1, 199.1)">+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque T" onclick="alterarEstoque('estoqueT_55306', -1, 199.1)">-</button>
+                        <input type="text" id="estoqueT_55306" value="0" readonly aria-label="Estoque T">
+                        <button aria-label="Aumentar estoque T" onclick="alterarEstoque('estoqueT_55306', 1, 199.1)">+</button>
+                    </div>
+                </td>
+                <td id="valor_55306">R$ 0,00</td>
+            </tr>
+            <tr>
+                <td>55307</td>
+                <td class="hidden">PLACA AM4 A520 DDR4 GT</td>
+                <td class="hidden">238,87</td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque S" onclick="alterarEstoque('estoqueS_55307', -1, 238.87)">-</button>
+                        <input type="text" id="estoqueS_55307" value="0" readonly aria-label="Estoque S">
+                        <button aria-label="Aumentar estoque S" onclick="alterarEstoque('estoqueS_55307', 1, 238.87)">+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque T" onclick="alterarEstoque('estoqueT_55307', -1, 238.87)">-</button>
+                        <input type="text" id="estoqueT_55307" value="0" readonly aria-label="Estoque T">
+                        <button aria-label="Aumentar estoque T" onclick="alterarEstoque('estoqueT_55307', 1, 238.87)">+</button>
+                    </div>
+                </td>
+                <td id="valor_55307">R$ 0,00</td>
+            </tr>
+            <tr>
+                <td>55308</td>
+                <td class="hidden">PLACA AM4 GAMING B450M DDR4 GT</td>
+                <td class="hidden">220,74</td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque S" onclick="alterarEstoque('estoqueS_55308', -1, 220.74)">-</button>
+                        <input type="text" id="estoqueS_55308" value="0" readonly aria-label="Estoque S">
+                        <button aria-label="Aumentar estoque S" onclick="alterarEstoque('estoqueS_55308', 1, 220.74)">+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque T" onclick="alterarEstoque('estoqueT_55308', -1, 220.74)">-</button>
+                        <input type="text" id="estoqueT_55308" value="0" readonly aria-label="Estoque T">
+                        <button aria-label="Aumentar estoque T" onclick="alterarEstoque('estoqueT_55308', 1, 220.74)">+</button>
+                    </div>
+                </td>
+                <td id="valor_55308">R$ 0,00</td>
+            </tr>
+            <tr>
+                <td>55310</td>
+                <td class="hidden">PLACA AM4 GAMING B550M DDR4 GT</td>
+                <td class="hidden">303,94</td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque S" onclick="alterarEstoque('estoqueS_55310', -1, 303.94)">-</button>
+                        <input type="text" id="estoqueS_55310" value="0" readonly aria-label="Estoque S">
+                        <button aria-label="Aumentar estoque S" onclick="alterarEstoque('estoqueS_55310', 1, 303.94)">+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque T" onclick="alterarEstoque('estoqueT_55310', -1, 303.94)">-</button>
+                        <input type="text" id="estoqueT_55310" value="0" readonly aria-label="Estoque T">
+                        <button aria-label="Aumentar estoque T" onclick="alterarEstoque('estoqueT_55310', 1, 303.94)">+</button>
+                    </div>
+                </td>
+                <td id="valor_55310">R$ 0,00</td>
+            </tr>
+            <tr>
+                <td>55674</td>
+                <td class="hidden">PLACA S1155 H61 DDR3 GE M2 GT BULK</td>
+                <td class="hidden">70,18</td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque S" onclick="alterarEstoque('estoqueS_55674', -1, 70.18)">-</button>
+                        <input type="text" id="estoqueS_55674" value="0" readonly aria-label="Estoque S">
+                        <button aria-label="Aumentar estoque S" onclick="alterarEstoque('estoqueS_55674', 1, 70.18)">+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque T" onclick="alterarEstoque('estoqueT_55674', -1, 70.18)">-</button>
+                        <input type="text" id="estoqueT_55674" value="0" readonly aria-label="Estoque T">
+                        <button aria-label="Aumentar estoque T" onclick="alterarEstoque('estoqueT_55674', 1, 70.18)">+</button>
+                    </div>
+                </td>
+                <td id="valor_55674">R$ 0,00</td>
+            </tr>
+            <tr>
+                <td>55909</td>
+                <td class="hidden">PLACA S1150 H81 DDR3 GT BULK</td>
+                <td class="hidden">96,54</td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque S" onclick="alterarEstoque('estoqueS_55909', -1, 96.54)">-</button>
+                        <input type="text" id="estoqueS_55909" value="0" readonly aria-label="Estoque S">
+                        <button aria-label="Aumentar estoque S" onclick="alterarEstoque('estoqueS_55909', 1, 96.54)">+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque T" onclick="alterarEstoque('estoqueT_55909', -1, 96.54)">-</button>
+                        <input type="text" id="estoqueT_55909" value="0" readonly aria-label="Estoque T">
+                        <button aria-label="Aumentar estoque T" onclick="alterarEstoque('estoqueT_55909', 1, 96.54)">+</button>
+                    </div>
+                </td>
+                <td id="valor_55909">R$ 0,00</td>
+            </tr>
+            <tr>
+                <td>55910</td>
+                <td class="hidden">PLACA S1200 H510 DDR4 M2 GT BULK</td>
+                <td class="hidden">230,49</td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque S" onclick="alterarEstoque('estoqueS_55910', -1, 230.49)">-</button>
+                        <input type="text" id="estoqueS_55910" value="0" readonly aria-label="Estoque S">
+                        <button aria-label="Aumentar estoque S" onclick="alterarEstoque('estoqueS_55910', 1, 230.49)">+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque T" onclick="alterarEstoque('estoqueT_55910', -1, 230.49)">-</button>
+                        <input type="text" id="estoqueT_55910" value="0" readonly aria-label="Estoque T">
+                        <button aria-label="Aumentar estoque T" onclick="alterarEstoque('estoqueT_55910', 1, 230.49)">+</button>
+                    </div>
+                </td>
+                <td id="valor_55910">R$ 0,00</td>
+            </tr>
+            <tr>
+                <td>58438</td>
+                <td class="hidden">PLACA S1151 H110 DDR4 M2 GT</td>
+                <td class="hidden">178,52</td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque S" onclick="alterarEstoque('estoqueS_58438', -1, 178.52)">-</button>
+                        <input type="text" id="estoqueS_58438" value="0" readonly aria-label="Estoque S">
+                        <button aria-label="Aumentar estoque S" onclick="alterarEstoque('estoqueS_58438', 1, 178.52)">+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque T" onclick="alterarEstoque('estoqueT_58438', -1, 178.52)">-</button>
+                        <input type="text" id="estoqueT_58438" value="0" readonly aria-label="Estoque T">
+                        <button aria-label="Aumentar estoque T" onclick="alterarEstoque('estoqueT_58438', 1, 178.52)">+</button>
+                    </div>
+                </td>
+                <td id="valor_58438">R$ 0,00</td>
+            </tr>
+            <tr>
+                <td>59469</td>
+                <td class="hidden">PLACA S1150 H81 DDR3 M2 GT</td>
+                <td class="hidden">94,93</td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque S" onclick="alterarEstoque('estoqueS_59469', -1, 94.93)">-</button>
+                        <input type="text" id="estoqueS_59469" value="0" readonly aria-label="Estoque S">
+                        <button aria-label="Aumentar estoque S" onclick="alterarEstoque('estoqueS_59469', 1, 94.93)">+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque T" onclick="alterarEstoque('estoqueT_59469', -1, 94.93)">-</button>
+                        <input type="text" id="estoqueT_59469" value="0" readonly aria-label="Estoque T">
+                        <button aria-label="Aumentar estoque T" onclick="alterarEstoque('estoqueT_59469', 1, 94.93)">+</button>
+                    </div>
+                </td>
+                <td id="valor_59469">R$ 0,00</td>
+            </tr>
+            <tr>
+                <td>60175</td>
+                <td class="hidden">PLACA S1150 H81 DDR3 M2 BC</td>
+                <td class="hidden">202,48</td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque S" onclick="alterarEstoque('estoqueS_60175', -1, 202.48)">-</button>
+                        <input type="text" id="estoqueS_60175" value="0" readonly aria-label="Estoque S">
+                        <button aria-label="Aumentar estoque S" onclick="alterarEstoque('estoqueS_60175', 1, 202.48)">+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque T" onclick="alterarEstoque('estoqueT_60175', -1, 202.48)">-</button>
+                        <input type="text" id="estoqueT_60175" value="0" readonly aria-label="Estoque T">
+                        <button aria-label="Aumentar estoque T" onclick="alterarEstoque('estoqueT_60175', 1, 202.48)">+</button>
+                    </div>
+                </td>
+                <td id="valor_60175">R$ 0,00</td>
+            </tr>
+            <tr>
+                <td>61751</td>
+                <td class="hidden">PLACA S1155 H61 DDR3 GE M2 GT</td>
+                <td class="hidden">74,45</td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque S" onclick="alterarEstoque('estoqueS_61751', -1, 74.45)">-</button>
+                        <input type="text" id="estoqueS_61751" value="0" readonly aria-label="Estoque S">
+                        <button aria-label="Aumentar estoque S" onclick="alterarEstoque('estoqueS_61751', 1, 74.45)">+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque T" onclick="alterarEstoque('estoqueT_61751', -1, 74.45)">-</button>
+                        <input type="text" id="estoqueT_61751" value="0" readonly aria-label="Estoque T">
+                        <button aria-label="Aumentar estoque T" onclick="alterarEstoque('estoqueT_61751', 1, 74.45)">+</button>
+                    </div>
+                </td>
+                <td id="valor_61751">R$ 0,00</td>
+            </tr>
+            <tr>
+                <td>63109</td>
+                <td class="hidden">PLACA S1700 H610 DDR4 M2 GT</td>
+                <td class="hidden">260,74</td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque S" onclick="alterarEstoque('estoqueS_63109', -1, 260.74)">-</button>
+                        <input type="text" id="estoqueS_63109" value="0" readonly aria-label="Estoque S">
+                        <button aria-label="Aumentar estoque S" onclick="alterarEstoque('estoqueS_63109', 1, 260.74)">+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque T" onclick="alterarEstoque('estoqueT_63109', -1, 260.74)">-</button>
+                        <input type="text" id="estoqueT_63109" value="0" readonly aria-label="Estoque T">
+                        <button aria-label="Aumentar estoque T" onclick="alterarEstoque('estoqueT_63109', 1, 260.74)">+</button>
+                    </div>
+                </td>
+                <td id="valor_63109">R$ 0,00</td>
+            </tr>
+            <tr>
+                <td>63273</td>
+                <td class="hidden">PLACA S1150 H81 DDR3 BC BULK</td>
+                <td class="hidden">152,13</td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque S" onclick="alterarEstoque('estoqueS_63273', -1, 152.13)">-</button>
+                        <input type="text" id="estoqueS_63273" value="0" readonly aria-label="Estoque S">
+                        <button aria-label="Aumentar estoque S" onclick="alterarEstoque('estoqueS_63273', 1, 152.13)">+</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="contador">
+                        <button aria-label="Diminuir estoque T" onclick="alterarEstoque('estoqueT_63273', -1, 152.13)">-</button>
+                        <input type="text" id="estoqueT_63273" value="0" readonly aria-label="Estoque T">
+                        <button aria-label="Aumentar estoque T" onclick="alterarEstoque('estoqueT_63273', 1, 152.13)">+</button>
+                    </div>
+                </td>
+                <td id="valor_63273">R$ 0,00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">Total</td>
+                <td id="total_valor_estoqueS">R$ 0,00</td>
+            </tr>
+        </tfoot>
+    </table>
+    <button class="exportar" onclick="exportarTxt()">Exportar para TXT</button>
+    <script src="scripts.js"></script>
+</body>
+</html>

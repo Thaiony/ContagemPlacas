@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.hidden {
+    display: none;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    background-color: #f2f2f2;
+}
+
+.contador {
+    display: flex;
+    align-items: center;
+}
+
+.contador button {
+    width: 30px;
+    height: 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.contador button:hover {
+    background-color: #45a049;
+}
+
+.contador input {
+    width: 60px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 0 5px;
+    border-radius: 4px;
+}
+
+button.exportar {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button.exportar:hover {
+    background-color: #45a049;
+}
