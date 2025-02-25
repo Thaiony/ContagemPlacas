@@ -5,6 +5,7 @@ function alterarEstoque(id, delta, cm) {
     input.value = valor;
     const codigo = id.split('_')[1];
     atualizarValor(codigo, cm);
+    salvarDados(); // Salva os dados após cada alteração
 }
 
 function atualizarValor(codigo, cm) {
@@ -97,4 +98,50 @@ function exportarExcel() {
 
     // Gerar arquivo Excel
     XLSX.writeFile(wb, "inventario_placas.xlsx");
+}
+
+// Função para salvar os dados no localStorage
+function salvarDados() {
+    const dados = {};
+    document.querySelectorAll('tbody tr:not(.subtotal)').forEach(tr => {
+        const codigo = tr.children[0].innerText;
+        dados[codigo] = {
+            estoqueS: document.getElementById(`estoqueS_${codigo}`)?.value || '0',
+            estoqueT: document.getElementById(`estoqueT_${codigo}`)?.value || '0',
+            valor: document.getElementById(`valor_${codigo}`)?.innerText || 'R$ 0,00'
+        };
+    });
+    localStorage.setItem('dadosInventario', JSON.stringify(dados));
+}
+
+// Função para carregar os dados do localStorage
+function carregarDados() {
+    const dados = JSON.parse(localStorage.getItem('dadosInventario')) || {};
+    Object.keys(dados).forEach(codigo => {
+        const item = dados[codigo];
+        if (document.getElementById(`estoqueS_${codigo}`)) {
+            document.getElementById(`estoqueS_${codigo}`).value = item.estoqueS;
+            document.getElementById(`estoqueT_${codigo}`).value = item.estoqueT;
+            document.getElementById(`valor_${codigo}`).innerText = item.valor;
+        }
+    });
+    atualizarTotal(); // Atualiza os totais após carregar os dados
+}
+
+// Adicione um event listener para carregar os dados quando a página carregar
+document.addEventListener('DOMContentLoaded', carregarDados);
+
+function limparDados() {
+    if (confirm('Tem certeza que deseja limpar todos os dados?')) {
+        localStorage.removeItem('dadosInventario');
+        document.querySelectorAll('tbody tr:not(.subtotal)').forEach(tr => {
+            const codigo = tr.children[0].innerText;
+            if (document.getElementById(`estoqueS_${codigo}`)) {
+                document.getElementById(`estoqueS_${codigo}`).value = '0';
+                document.getElementById(`estoqueT_${codigo}`).value = '0';
+                document.getElementById(`valor_${codigo}`).innerText = 'R$ 0,00';
+            }
+        });
+        atualizarTotal();
+    }
 }
