@@ -11,17 +11,39 @@ function atualizarValor(codigo, cm) {
     const estoqueS = document.getElementById(`estoqueS_${codigo}`).value;
     const estoqueT = document.getElementById(`estoqueT_${codigo}`).value;
     const valorTotal = estoqueS * cm;
-    document.getElementById(`valor_${codigo}`).innerText = `R$ ${valorTotal.toFixed(2)}`;
+    document.getElementById(`valor_${codigo}`).innerText = 
+        `R$ ${valorTotal.toFixed(2).replace('.', ',')}`;
     atualizarTotal();
 }
 
 function atualizarTotal() {
-    let total = 0;
-    document.querySelectorAll('tbody tr').forEach(tr => {
-        const valor = parseFloat(tr.querySelector('td[id^="valor_"]').innerText.replace('R$', '').replace(',', '.'));
-        total += isNaN(valor) ? 0 : valor;
+    let totalValor = 0;
+    let subtotalS = 0;
+    let subtotalT = 0;
+
+    document.querySelectorAll('tbody tr:not(.subtotal)').forEach(tr => {
+        // Soma estoques
+        const estoqueS = parseInt(tr.querySelector('input[id^="estoqueS_"]')?.value) || 0;
+        const estoqueT = parseInt(tr.querySelector('input[id^="estoqueT_"]')?.value) || 0;
+        subtotalS += estoqueS;
+        subtotalT += estoqueT;
+
+        // Soma valor
+        const valor = parseFloat(tr.querySelector('td[id^="valor_"]')?.innerText
+            .replace('R$', '')
+            .replace('.', '')
+            .replace(',', '.')
+            .trim()) || 0;
+        totalValor += valor;
     });
-    document.getElementById('total_valor_estoqueS').innerText = `R$ ${total.toFixed(2)}`;
+
+    // Atualiza subtotais
+    document.getElementById('subtotal_estoqueS').innerText = subtotalS;
+    document.getElementById('subtotal_estoqueT').innerText = subtotalT;
+
+    // Atualiza total geral
+    document.getElementById('total_valor_estoqueS').innerText = 
+        `R$ ${totalValor.toFixed(2).replace('.', ',')}`;
 }
 
 function exportarTxt() {
@@ -35,7 +57,6 @@ function exportarTxt() {
         const valorEstoqueS = tr.children[5].innerText;
         texto += `${codigo}\t${descricao}\t${cm}\t${estoqueS}\t${estoqueT}\t${valorEstoqueS}\n`;
     });
-
     const blob = new Blob([texto], { type: 'text/plain' });
     const link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
