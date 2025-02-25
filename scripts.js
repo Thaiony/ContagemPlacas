@@ -66,37 +66,39 @@ function exportarTxt() {
 }
 
 function exportarExcel() {
-    // Criar array com os dados
+    // Criar uma matriz de dados para o Excel
     const dados = [];
     
     // Adicionar cabeçalho
     dados.push(['Código', 'Descrição', 'CM', 'Estoque S', 'Estoque T', 'Valor Estoque S']);
     
     // Adicionar dados das linhas
-    document.querySelectorAll('tbody tr').forEach(tr => {
+    document.querySelectorAll('tbody tr:not(.subtotal)').forEach(tr => {
         const linha = [
-            tr.children[0].innerText,                          // Código
-            tr.children[1].innerText,                          // Descrição
-            tr.children[2].innerText,                          // CM
-            tr.children[3].querySelector('input').value,       // Estoque S
-            tr.children[4].querySelector('input').value,       // Estoque T
-            tr.children[5].innerText                           // Valor Estoque S
+            tr.children[0].innerText, // Código
+            tr.children[1].innerText, // Descrição
+            tr.children[2].innerText, // CM
+            tr.querySelector('input[id^="estoqueS_"]')?.value || '0', // Estoque S
+            tr.querySelector('input[id^="estoqueT_"]')?.value || '0', // Estoque T
+            tr.querySelector('td[id^="valor_"]')?.innerText || 'R$ 0,00' // Valor Estoque S
         ];
         dados.push(linha);
     });
 
-    // Adicionar linha do total
-    const totalValor = document.getElementById('total_valor_estoqueS').innerText;
-    dados.push(['', '', '', '', 'Total:', totalValor]);
+    // Adicionar linha de total
+    const totalS = document.getElementById('total_estoqueS')?.innerText || '0';
+    const totalT = document.getElementById('total_estoqueT')?.innerText || '0';
+    const totalValor = document.getElementById('total_valor_estoqueS')?.innerText || 'R$ 0,00';
+    dados.push(['TOTAL', '', '', totalS, totalT, totalValor]);
 
-    // Criar planilha
+    // Criar uma nova planilha
     const ws = XLSX.utils.aoa_to_sheet(dados);
 
-    // Criar workbook
+    // Criar um novo livro
     const wb = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(wb, ws, "Inventário");
 
-    // Gerar arquivo Excel
+    // Salvar o arquivo
     XLSX.writeFile(wb, "inventario_placas.xlsx");
 }
 
